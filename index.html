@@ -53,20 +53,53 @@
     <section class="members" id="members">
         <div class="container">
             <h2>车队成员</h2>
-            <div class="members-grid">
-                <!-- 成员卡片将通过CSS Grid布局展示 -->
-                <div class="member-card">
+            <div class="members-grid" id="members-container">
+                <!-- 第1页成员 -->
+                <div class="member-card" data-page="1">
                     <h3>车队创始人</h3>
                     <p>水星哥哥</p>
                 </div>
-                <div class="member-card">
+                <div class="member-card" data-page="1">
                     <h3>车队队长</h3>
                     <p>小柏</p>
                 </div>
-                <div class="member-card">
+                <div class="member-card" data-page="1">
                     <h3>车队技术</h3>
                     <p>小琅Langford</p>
                 </div>
+                <!-- 第2页成员 -->
+                <div class="member-card" data-page="2">
+                    <h3>车队副队长</h3>
+                    <p>大熊</p>
+                </div>
+                <div class="member-card" data-page="2">
+                    <h3>车队财务</h3>
+                    <p>小明</p>
+                </div>
+                <div class="member-card" data-page="2">
+                    <h3>车队宣传</h3>
+                    <p>阿强</p>
+                </div>
+                <!-- 第3页成员 -->
+                <div class="member-card" data-page="3">
+                    <h3>资深司机</h3>
+                    <p>老王</p>
+                </div>
+                <div class="member-card" data-page="3">
+                    <h3>资深司机</h3>
+                    <p>小李</p>
+                </div>
+                <div class="member-card" data-page="3">
+                    <h3>资深司机</h3>
+                    <p>阿飞</p>
+                </div>
+            </div>
+            
+            <!-- 分页导航 -->
+            <div class="pagination">
+                <button class="page-btn" data-page="1">1</button>
+                <button class="page-btn" data-page="2">2</button>
+                <button class="page-btn" data-page="3">3</button>
             </div>
         </div>
     </section>
@@ -99,5 +132,8 @@
             </div>
         </div>
     </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/pagination.js"></script>
 </body>
 </html>
